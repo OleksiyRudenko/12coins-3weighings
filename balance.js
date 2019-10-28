@@ -4,7 +4,7 @@
  * @param {number[]} set1indices - 1st subset of the indices of the array to sum up as a left side weight
  * @param {number[]} set2indices - 2nd subset of the indices of the array to sum up as a right side weight
  * @returns difference between sums of subset 1 and subset 2
- * example: BalanceCallback([2,2,3,2,2,2,2,2,2,2,2,2], [0,1,2], [9,10,11]) => (2+2+3 - 2+2+2) => 1
+ * example: BalanceCallback([2,2,3,2,2,2,2,2,2,2,2,2], [0,1,2], [9,10,11]) => (2+2+3) - (2+2+2) => 1
  */
 
 /**

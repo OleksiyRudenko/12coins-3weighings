@@ -55,7 +55,7 @@ if coins on the left are lighter, and a value greater than `0`
 if coins on the left are heavier. 
 
 For example `balance([2,5,2,2,2,2,2,2,2,2,2,2], [0,1], [7,8])`
-would return `3` since `2+5 - 2+2 == 3`, which means that
+would return `3` since `(2+5) - (2+2) == 3`, which means that
 there is a heavier coin on the left plate.
 
 Launch your experiments from `./experimenting.js`.
@@ -87,7 +87,7 @@ a couple of attempts to solve the problem.
 Change of balance may help. So consider moving coins
 between the plates. For example,
 if `1 + 2 + 3 < 4 + 5 + 6` and `1 + 2 + 4 > 3 + 5`
-then the fake coin is either `3` or `4` cause moving them
+then the fake coin is either `3` or `4` 'cause moving them
 changes the balance.
 
 </p>
