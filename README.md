@@ -29,33 +29,34 @@ The function parameters are:
   may be greater or lesser than others 
 * `balance` - a function to weigh the coins
 
-Your function is expected to return an array of two
+Your `findFake` function is expected to return an array of two
 items where first item is a fake coin index in the 
 input array and the second item is fake coin's weight/value.
 
 So, `findFake([21,21,21,21,21,21,29,21,21,21,21,21], balanceMaker())`
-would return `[7,29]` representing a fake coin where
-`7` is an index of fake coin and `29` is its weight.
+would return `[6,29]` representing a fake coin where
+`6` is an index of fake coin and `29` is its weight.
 
 Use `balance` function inside your `findFake` 
 to make weighings.
-You may use your own but final tests will employ
+You may use your own balancing function but final tests will employ
 the one provided by the author. It also calculates
 number of its own invocations for you
 (remember, 3 invocations is a maximum). 
 
-The `balance` functions takes 3 arguments that are:
-- `array` - a source array of 12 coins weight
+The `balance` function takes 3 arguments that are:
+- `array` - a source array representing 12 coins
 - `set1indices` - indices of coins to put on the left plate
 - `set2indices` - indices of coins to put on the right plate
 
-The function returns 0 if both are equal, a value `< 0`
-if coins on the left are lighter, and a value `> 0`
+The function returns `0` if the weight on both plates is equal,
+a value lesser than `0`
+if coins on the left are lighter, and a value greater than `0`
 if coins on the left are heavier. 
 
 For example `balance([2,5,2,2,2,2,2,2,2,2,2,2], [0,1], [7,8])`
-would return `3` since `2+5 - 2+2 == 3`, which means
-coins on the left plate are heavier.
+would return `3` since `2+5 - 2+2 == 3`, which means that
+there is a heavier coin on the left plate.
 
 Launch your experiments from `./experimenting.js`.
 This module imports what is required and also

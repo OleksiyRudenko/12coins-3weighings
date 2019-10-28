@@ -20,6 +20,7 @@
  * @param {BalanceCallback} balance function; supplied by the project author
  * @returns {Fake}
  * example: findFake([1,1,3,1,1,1,1,1,1,1,1,1], balanceMaker()) => [2, 3]
+ * See experimenting.js for the use cases.
  */
 const findFake = function(array, balance) {
   // Example of balance function use
